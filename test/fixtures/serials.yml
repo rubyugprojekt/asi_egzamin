@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tytul: MyString
+  rezyser: MyString
+  opis: MyText
+  pochodznie: MyString
+
+two:
+  tytul: MyString
+  rezyser: MyString
+  opis: MyText
+  pochodznie: MyString

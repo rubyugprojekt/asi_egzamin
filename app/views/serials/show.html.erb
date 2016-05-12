@@ -1,0 +1,8 @@
+<h3> <%= @serial.tytul %></h3>
+<h3> <%= @serial.rezyser %></h3>
+<h3> <%= @serial.opis %></h3>
+<h3> <%= @serial.pochodznie %></h3>
+
+<%= link_to 'Cofnij', root_path %>
+<%= link_to 'Edytuj', edit_serial_path(@serial) %>
+<%= link_to 'Usun', serial_path(@serial), method: :delete, data: { confirm: "Czy jesteś pewien?" } %>
