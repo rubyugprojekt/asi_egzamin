@@ -1,4 +1,6 @@
-<%= simple_form_for @serial do |f| %>
+<%= simple_form_for @serial, :html => {:multipart => true } do |f| %>
+  <%= select_tag(:category_id, options_for_select(@categories), :prompt => "Wybierz kategorie") %>
+    <%= f.file_field :serial_img %>
     <%= f.input :tytul, label: "Tytuł Serialu" %> 
     <%= f.input :rezyser, label: "Rezyser" %>
     <%= f.input :opis, label: "Opis Serialu" %> 

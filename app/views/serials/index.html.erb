@@ -1,4 +1,19 @@
-<% @serial.each do |serial| %>
-    <h2> <%= link_to serial.tytul, serial_path(serial) %></h2>
+<h1 class="current-category"> <%= params[:category] %></h1>
+
+<% if @serials.count == 0 %>
+<h2> Nie ma filmów w tej kategorii</h2>
+<% else %>
+
+<div class="row">
+
+<% @serials.each do |serial| %>
+<div class="col-md-3">
+   <a href="/serials/<%= serial.id %>">
+       <%= image_tag serial.serial_img.url(:serial_index), class: "serial" %>
+       
+   </a>
+   </div>
+<% end %>
+</div>
 <% end %>
 

@@ -1,8 +1,22 @@
-<h3> <%= @serial.tytul %></h3>
-<h3> <%= @serial.rezyser %></h3>
-<h3> <%= @serial.opis %></h3>
-<h3> <%= @serial.pochodznie %></h3>
+<div class = "show">
+    
+    <div class = "col-md-4">
+        <%= image_tag @serial.serial_img.url(:serial_show),class: "serial-show" %>
+    </div>
+    <div class = "col-md-8">
+        <h1> <%= @serial.tytul %></h1>
+        <h1> <%= @serial.rezyser %></h1>
+        <h1> <%= @serial.opis %></h2>
+        <h1> <%= @serial.pochodznie %></h1>
+    </div>
 
+</div>
 <%= link_to 'Cofnij', root_path %>
-<%= link_to 'Edytuj', edit_serial_path(@serial) %>
-<%= link_to 'Usun', serial_path(@serial), method: :delete, data: { confirm: "Czy jesteś pewien?" } %>
+
+<% if user_signed_in? %>
+
+    <% if @serial.user_id == current_user.id %>
+        <%= link_to 'Edytuj', edit_serial_path(@serial) %>
+        <%= link_to 'Usun', serial_path(@serial), method: :delete, data: { confirm: "Czy jesteś pewien?" } %>
+    <% end %>
+<% end %>

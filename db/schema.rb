@@ -11,15 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160512132426) do
+ActiveRecord::Schema.define(version: 20160513151902) do
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "nazwa"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "serials", force: :cascade do |t|
     t.string   "tytul"
     t.string   "rezyser"
     t.text     "opis"
     t.string   "pochodznie"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.integer  "user_id"
+    t.integer  "category_id"
+    t.string   "serial_img_file_name"
+    t.string   "serial_img_content_type"
+    t.integer  "serial_img_file_size"
+    t.datetime "serial_img_updated_at"
   end
 
   create_table "users", force: :cascade do |t|
