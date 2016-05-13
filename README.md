@@ -1,8 +1,5 @@
 ### Projekt zespołowy na egzamin ASI
- Skład zespołu: 
--Martin Zelek
--Krzysztof Stelmach
--Robert Knop
+###Skład zespołu:  Martin Zelek, Krzysztof Stelmach, Robert Knop
 
  Egzamin:
  - [ ] [nazwa aplikacji](egzamin)
