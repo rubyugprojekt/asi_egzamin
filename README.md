@@ -24,7 +24,8 @@
  - Dodanie obrazków za pomocą imagemagick
  - wrzucenie aplikacji na heroku
  - częściowe spolszczenie komunikatów
- -paginacja
+ - paginacja
+ 
  
 - Robert Knop
  - stworzenie modelu Recenzja wraz z kontrolerami i widokami do dodawania, edycji i usuwania oraz powiązanie go z użytkownikiem i serialem
