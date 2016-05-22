@@ -44,7 +44,7 @@
 
  Opis Projektu:
 
-Projekt służy do wystawiania recenzji dla danego serialu. Dodawać recenzje może każdy, zarządzać serialem (edytować/usunąć) może tylko ten co go dodał. W Aplikacji można wyświetlać seriale po gatunku do jakiego należą.
+Projekt służy do wystawiania recenzji dla danego serialu. Dodawać recenzje może każdy, zarządzać serialem (edytować/usunąć) może tylko ten co go dodał (serial ma relacje Many to One z userem). W Aplikacji można wyświetlać seriale po gatunku do jakiego należą (Serial ma relacje one to many z Kategorią).
 
 
  Informacje:
