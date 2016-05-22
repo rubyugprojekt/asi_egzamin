@@ -1,0 +1,14 @@
+<%= simple_form_for([@serial, @serial.reviews.build]) do |f| %>
+<div id="rating-form">
+  <label>Ocena: </label>
+</div>
+ <%= f.input :comment, label: "Komentarz" %>
+ <%= f.button :submit, "Dodaj" %>
+ <% end %>
+ 
+ <script>
+  $('#rating-form').raty({
+   path:'/assets/',
+   scoreName: 'review[rating]'
+  });
+ </script>

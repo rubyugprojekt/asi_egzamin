@@ -1,0 +1,18 @@
+<div class="review">
+
+<div class="review-rating" data-score="<%= review.rating %>"> </div>
+<p class="review-comment"><%= review.comment %></p>
+
+<% if user_signed_in? %>
+ <% if review.user_id == current_user.id %>
+
+ <div class="links btn-group">
+  <%= link_to "Edytuj", edit_serial_review_path(review.serial, review), class: "btn btn-custom" %>
+  <%= link_to "Usuń", serial_review_path(review.serial, review), method: :delete,
+  data: { confirm: "Na pewno?"}, class: "btn btn-custom" %>
+ </div>
+
+ <% end %>
+<% end %>
+
+</div>
