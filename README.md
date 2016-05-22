@@ -11,6 +11,17 @@
  - funkcjonalność edycji seriali
  - funkcjonalność podglądu seriali
 
+- Martin Zelek
+ - stworzenie modelu Kategoria
+ - Powiązanie kategorii z serialem (one to many)
+ - Zrobienie dropdown listy i listowanie Seriali po kategorii
+ - Powiązanie usera z serialem (one to many)
+ - Dodanie obrazków za pomocą imagemagick
+ - wrzucenie aplikacji na heroku
+ - częściowe spolszczenie komunikatów
+ - 
+ 
+
  Egzamin:
  - [ ] [nazwa aplikacji](egzamin)
  - [ ] [link do wdrożonej na zewnętrznym serwerze aplikacji](/)
