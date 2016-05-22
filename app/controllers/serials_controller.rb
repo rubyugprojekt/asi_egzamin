@@ -1,5 +1,6 @@
 class SerialsController < ApplicationController
     before_action :find_serial, only: [:show, :edit, :update, :destroy]
+    before_action :authenticate_user!, only:[:new, :edit]
     
     def index
         if params[:category].blank?
@@ -12,7 +13,11 @@ class SerialsController < ApplicationController
 
     
     def show
-       
+       if @serial.reviews.blank?
+           @average_review = 0
+       else
+           @average_review = @serial.reviews.average(:rating).round(2)
+       end
     end
     
     

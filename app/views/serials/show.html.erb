@@ -4,19 +4,62 @@
         <%= image_tag @serial.serial_img.url(:serial_show),class: "serial-show" %>
     </div>
     <div class = "col-md-8">
-        <h1> <%= @serial.tytul %></h1>
-        <h1> <%= @serial.rezyser %></h1>
-        <h1> <%= @serial.opis %></h2>
-        <h1> <%= @serial.pochodznie %></h1>
+        <div class="serial-info">
+         <h1 class="serial-tytul"> <%= @serial.tytul %></h1>
+         <h1 class="serial-rezyser"> <%= @serial.rezyser %></h1>
+         <h1 class="avg-rating">Średnia ocena: </h1>
+         <div class="average-review-rating" data-score=<%= @average_review %>></div>
+         <span class="number-of-reviews">Liczba ocen: <%= @serial.reviews.count%></span>
+         <h1 class="serial-description"> <%= @serial.opis %></h1>
+         <h1> <%= @serial.pochodznie %></h1>
+        </div>
     </div>
 
 </div>
-<%= link_to 'Cofnij', root_path %>
+
+<div class="row">
+    <div class="col-md-4">
+        
+        <div class="reviews">
+         <h1>Recenzje</h1>
+         <%= render @serial.reviews %>
+         <div>
+             <%= link_to "Dodaj recenzję", new_serial_review_path(@serial), class: "btn-custom" %>
+         </div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="links btn-group">
+<%= link_to 'Cofnij', root_path, class: "btn btn-custom" %>
 
 <% if user_signed_in? %>
 
     <% if @serial.user_id == current_user.id %>
-        <%= link_to 'Edytuj', edit_serial_path(@serial) %>
-        <%= link_to 'Usun', serial_path(@serial), method: :delete, data: { confirm: "Czy jesteś pewien?" } %>
+        <%= link_to 'Edytuj', edit_serial_path(@serial), class: "btn btn-custom" %>
+        <%= link_to 'Usun', serial_path(@serial), method: :delete, data: { confirm: "Czy jesteś pewien?" }, class: "btn btn-custom" %>
     <% end %>
 <% end %>
+
+</div>
+
+<script>
+    $('.review-rating').raty({
+        readOnly: true,
+        score: function(){
+            return $(this).attr('data-score');
+        },
+        path: '/assets'
+    });
+</script>
+
+<script>
+    $('.average-review-rating').raty({
+        readOnly: true,
+        score: function(){
+            return $(this).attr('data-score');
+        },
+        path: '/assets'
+    });
+</script>
