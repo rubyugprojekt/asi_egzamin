@@ -1,6 +1,8 @@
 ### Projekt zespołowy na egzamin ASI
 ###Skład zespołu:  Martin Zelek, Krzysztof Stelmach, Robert Knop
 
+###Nazwa zespołu: Martin&Partners
+
 - Krzysztof Stelmach
  - stworzenia modelu serialu
  - stworzenie kontrolera serialu
