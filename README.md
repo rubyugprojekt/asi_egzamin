@@ -12,10 +12,11 @@
  - funkcjonalność podglądu seriali
 
 - Martin Zelek
- - stworzenie modelu Kategoria
+ - stworzenie modelu Kategoria i dodanie w konsoli kategorii
  - Powiązanie kategorii z serialem (one to many)
  - Zrobienie dropdown listy i listowanie Seriali po kategorii
  - Powiązanie usera z serialem (one to many)
+ - User który dodał dany serial może tylko nim zarządzać
  - Dodanie obrazków za pomocą imagemagick
  - wrzucenie aplikacji na heroku
  - częściowe spolszczenie komunikatów
