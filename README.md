@@ -1,7 +1,9 @@
 ### Projekt zespołowy na egzamin ASI
+
 ###Skład zespołu:  Martin Zelek, Krzysztof Stelmach, Robert Knop
 
 ###Nazwa zespołu: MKR
+###Nazwa projektu: Ranking seriali
 
 - Krzysztof Stelmach
  - stworzenia modelu serialu
