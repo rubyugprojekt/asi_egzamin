@@ -2,13 +2,18 @@ class SerialsController < ApplicationController
     before_action :find_serial, only: [:show, :edit, :update, :destroy]
     before_action :authenticate_user!, only:[:new, :edit]
     
-    def index
+      def index
         if params[:category].blank?
         @serials = Serial.all.order("created_at DESC")
         else
         @category_id = Category.find_by(nazwa: params[:category]).id
         @serials = Serial.where(:category_id => @category_id).order("created_at DESC")
         end
+          if params[:search]
+				@serials = Serial.search(params[:search]).paginate(:page => params[:page], :per_page => 8)
+				else
+  @serials = Serial.paginate(:page => params[:page], :per_page => 8)
+  end
     end
 
     
