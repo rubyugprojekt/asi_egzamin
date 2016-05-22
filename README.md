@@ -22,7 +22,9 @@
  - Dodanie obrazków za pomocą imagemagick
  - wrzucenie aplikacji na heroku
  - częściowe spolszczenie komunikatów
- - 
+ 
+- Robert Knop
+ 
  
 
  Egzamin:
