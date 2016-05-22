@@ -24,6 +24,12 @@
  - częściowe spolszczenie komunikatów
  
 - Robert Knop
+ - stworzenie modelu Recenzja wraz z kontrolerami i widokami do dodawania, edycji i usuwania oraz powiązanie go z użytkownikiem i serialem
+ - umożliwienie edycji lub usunięcia recenzji tylko użytkownikowi, który ją dodał
+ - dodanie biblioteki JS raty i systemu oceniania gwiazdkami
+ - dodanie średniej oceny
+ - style do widoków
+ - częściowe spolszczenie komunikatów oraz interfejsu
  
  
 
