@@ -25,7 +25,7 @@
 
  Egzamin:
  - [ ] [Ranking seriali](egzamin)
- - [ ] [https://projekt-ruby.herokuapp.com/](herokuapp)
+ - [ ] [herokuapp](https://projekt-ruby.herokuapp.com/)
 
 
 
