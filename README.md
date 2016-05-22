@@ -1,6 +1,14 @@
 ### Projekt zespołowy na egzamin ASI
 ###Skład zespołu:  Martin Zelek, Krzysztof Stelmach, Robert Knop
-
+-Krzysztof Stelmach
+ -Stworzenia modelu serialu
+ -stworzenie kontrolera serialu
+ -dodanie gemów simple_form i bootstrap
+ -instalacja gemów simple form i bootstrap
+ -logowanie
+ -funkcjonalność dodawania seriali
+ -funkcjonalność edycji seriali
+ -funkcjonalność podglądu seriali
  Egzamin:
  - [ ] [nazwa aplikacji](egzamin)
  - [ ] [link do wdrożonej na zewnętrznym serwerze aplikacji](/)
