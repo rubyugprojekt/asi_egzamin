@@ -24,15 +24,15 @@
  
 
  Egzamin:
- - [ ] [nazwa aplikacji](egzamin)
- - [ ] [link do wdrożonej na zewnętrznym serwerze aplikacji](/)
+ - [ ] [Ranking seriali](egzamin)
+ - [ ] [https://projekt-ruby.herokuapp.com/](herokuapp)
 
 
 
 
  Opis Projektu:
 
-
+Projekt służy do wystawiania recenzji dla danego serialu. Dodawać recenzje może każdy, zarządzać serialem (edytować/usunąć) może tylko ten co go dodał. W Aplikacji można wyświetlać seriale po gatunku do jakiego należą.
 
 
  Informacje:
